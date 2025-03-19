@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Myntra</title>
+        <link rel="stylesheet" href="myntralogin.css">
+        <script type="text/javascript" src="myntralogin.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> -->
+    </head>
+    <body>
+        <div class="desktop-header-container">
+            <div class="desktop-logo-container">
+                <div href class="desktop-logo myntraweb-sprite">
+                    <img src="myntra.png">
+                </div>
+            </div>
+            <div class="desktop-navlink-container">
+                <div class="desktop-navcontent">
+                    <a href="#">MEN</a>
+                </div>
+                <div class="desktop-navcontent">
+                    <a href="#">WOMEN</a>
+                </div>
+                <div class="desktop-navcontent">
+                    <a href="#">KIDS</a>
+                </div>
+                <div class="desktop-navcontent">
+                    <a href="#">HOME LIVING</a>
+                </div>
+                <div class="desktop-navcontent">
+                    <a href="#">STUDIO</a>
+                </div>
+            </div>
+            <div class="desktop-actions">
+                <a href="#" class="desktop-wishlist">
+                    
+                    <span class="desktop-userTitle">Wishlist</span>
+                </a>
+                <a href="#" class="desktop-cart">
+                    <span class="desktop-userTitle">Bag</span>
+                </a>
+            </div>
+            <div class="desktop-input-container">
+                <input type="text" placeholder="Search for ptoducts, brands and more" class="desktop-input">
+            </div>
+        </div>
+        <div id="mainContent">
+            <div class="image">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg">
+            </div>
+            <div class="signInContainer">
+                <div class="welcome-header">
+                    Login <span style="font-weight:400; font-size:16px; color: #535766">or</span> Signup
+                </div>
+                <form class="Form" onsubmit="return validate()" action="submitted.html">
+
+                    <div class="mobileForm">
+                        <label>Name:</label>
+                        <input type="text" id="nameInputContainer">
+                    </div>
+
+                    
+
+                    <div class="mobileForm">
+                        <!-- <span class="placeholderAlternative mobileNumber">+91</span>
+                        <span style="padding: 0px 10px; position: relative; bottom: 1px;">|</span> -->
+                        <label>Mobile Number:</label>
+                        <input id="mobileInputContainer" type="tel" maxlength="10" minlength="10" placeholder="">
+                        <!-- <input type="email" class="emailInputContainer"> -->
+                        <!-- <span class="mobileNumberPlacholder">Mobile Number
+                            <span class="asterik" style="color: rgb(255, 87, 34);">*</span>
+                        </span> -->
+                        
+                    </div>
+
+                    
+
+                    <div class="mobileForm">
+                        <label>Mail address:</label>
+                        <input type="email" id="emailInputContainer">
+                    </div>
+
+                    <div class="mobileForm">
+                        <label>Address:</label>
+                        <input type="text" id="addressInputContainer">
+                    </div>
+                    
+                    <div class="mobileForm">
+                        <label>Pincode:</label>
+                        <input type="text" id="pincodeInputContainer">
+                    </div>
+
+                   
+
+                    <div class="mobileForm">
+                        <label>Password:</label>
+                        <input type="password" id="passwordInputContainer">
+                    </div>
+
+                    <div class="mobileForm">
+                        <label>Confirm Password:</label>
+                        <input type="password" id="cpasswordInputContainer">
+                    </div>
+                    
+
+                    <div class="midLinks">
+                        By continuing, I agree to the
+                        <a href="https://www.myntra.com/termsofuse">Terms of Use</a>
+                        &
+                        <a href="https://www.myntra.com/privacypolicy">Privacy Policy</a>
+                    </div>
+                    <div class="submitButtonOption">
+                        
+                        <input type="submit" placeholder="CONTINUE" style="border: none; color: white; background-color: #ff3f6c;">
+                    </div>     
+                </form>
+                
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
