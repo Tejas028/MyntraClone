@@ -59,6 +59,37 @@ function validate(){
     }
     else
     {
-        true;
+        return true;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("loginForm");
+    var status = document.getElementById("loginStatus");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        status.textContent = "";
+
+        if (!validate()) {
+            return;
+        }
+
+        var response = await fetch("/api/login", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                email: document.getElementById("emailInputContainer").value,
+                password: document.getElementById("passwordInputContainer").value
+            })
+        });
+
+        if (response.ok) {
+            window.location.href = "submitted.html";
+            return;
+        }
+
+        var result = await response.json();
+        status.textContent = result.error || "Login failed. Please try again.";
+    });
+});

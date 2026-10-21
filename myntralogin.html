@@ -58,7 +58,7 @@
                 <div class="welcome-header">
                     Login <span style="font-weight:400; font-size:16px; color: #535766">or</span> Signup
                 </div>
-                <form class="Form" onsubmit="return validate()" action="submitted.html">
+                <form class="Form" id="loginForm">
 
                     <div class="mobileForm">
                         <label>Name:</label>
@@ -116,10 +116,10 @@
                         <a href="https://www.myntra.com/privacypolicy">Privacy Policy</a>
                     </div>
                     <div class="submitButtonOption">
-                        
-                        <input type="submit" placeholder="CONTINUE" style="border: none; color: white; background-color: #ff3f6c;">
+                        <input type="submit" value="CONTINUE" style="border: none; color: white; background-color: #ff3f6c;">
                     </div>     
                 </form>
+                <p id="loginStatus" role="status" aria-live="polite"></p>
                 
                 
             </div>
